@@ -20,7 +20,7 @@ ncat verbal-sleep.picoctf.net 63337
 ```
 
 <div align="center">
-  <img src="img/fctf_1.png" alt="Terminal Connection Initial Output" />
+  <img src="img/FANTASY_CFT1.png" alt="Terminal Connection Initial Output" />
   <p><i>Figure 1: Establishing the connection using 'ncat' and receiving the game's introduction.</i></p>
 </div>
 
@@ -38,7 +38,7 @@ We are presented with three scenarios:
 * C) Register a single, private account (The standard, rule-compliant action).
 
 <div align="center">
-  <img src="img/fctf_2.png" alt="Account Registration Options" />
+  <img src="img/FANTASY_CFT2.png" alt="Account Registration Options" />
   <p><i>Figure 2: The simulation asks us to choose an account registration method.</i></p>
 </div>
 
@@ -51,14 +51,14 @@ I selected option **C** (`[a/b/c] > c`).
 The simulation continued to test our understanding of CTF ethics. We were given options to either *Play the game* or *Search the Ether for the flag*.
 
 <div align="center">
-  <img src="img/fctf_3.png" alt="Ether Search Question" />
+  <img src="img/FANTASY_CFT3.png" alt="Ether Search Question" />
   <p><i>Figure 3: Exploring the temptation to 'search the Ether' for an easy flag.</i></p>
 </div>
 
 Initially selecting 'b' resulted in Nyx warning against submitting other players' flags or sharing artifact downloads, which is another form of rule-breaking. To proceed correctly, I selected option **A** (`[a/b] > a`), committing to *Play the game*.
 
 <div align="center">
-  <img src="img/fctf_4.png" alt="Play the Game Confirmation" />
+  <img src="img/FANTASY_CFT4.png" alt="Play the Game Confirmation" />
   <p><i>Figure 4: Confirming the choice to play the game fairly and find our own flag.</i></p>
 </div>
 
@@ -71,7 +71,7 @@ By simply following the compliant, ethical path and continuing to play the simul
 After making the correct, ethical choices, the simulation concluded, and the flag was presented.
 
 <div align="center">
-  <img src="img/fctf_5.png" alt="Final Flag Output" />
+  <img src="img/FANTASY_CFT5.png" alt="Final Flag Output" />
   <p><i>Figure 5: The culmination of the 'FANTASY CTF' simulation, revealing the flag.</i></p>
 </div>
 
