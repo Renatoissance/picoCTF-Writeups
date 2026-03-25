@@ -13,7 +13,10 @@ After downloading and opening the `server.log` file, I noticed that the log entr
 
 In the initial inspection, it became clear that the flag was broken into several fragments scattered across different timestamps.
 
-![Initial Log Inspection](./img/log_hunt1.png)
+<p align="center">
+  <img src="img/log_hunt1.png" alt="Initial Log Inspection"><br>
+  <i>Figure 1: Initial inspection of 'server.log' showing standard log noise interspersed with 'FLAGPART' fragments.</i>
+</p>
 
 ## 🛠️ Solution
 To avoid searching through thousands of lines manually, I used the Windows Command Line tool `FINDSTR` to filter the log for all occurrences of the keyword "FLAGPART".
@@ -25,7 +28,10 @@ FINDSTR /C:"FLAGPART" server.log
 
 The output (as seen below) revealed the fragments in a repetitive pattern. By identifying the unique parts and concatenating them, the full flag was reconstructed.
 
-![Filtering with FINDSTR](./img/log_hunt2.png)
+<p align="center">
+<img src="img/log_hunt2.png" alt="Filtering with FINDSTR">
+<i>Figure 2: Output of 'FINDSTR' filtering, displaying only the 'FLAGPART' entries, which allowed for systematic reconstruction of the flag.</i>
+</p>
 
 ### Reconstructed Fragments:
 1. `picoCTF{us3_`
