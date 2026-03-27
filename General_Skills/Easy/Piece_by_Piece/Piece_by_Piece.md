@@ -21,7 +21,7 @@ First, I launched the challenge instance and connected via SSH using the provide
 </div>
 
 ### Environment Inspection
-Once connected, I listed the contents of the home directory using `ls`. I identified four fragments (`part_aa` to `part_ae`) and a file named `instructions.txt`.
+Once connected, I listed the contents of the home directory using `ls`. I identified five fragments (`part_aa` to `part_ae`) and a file named `instructions.txt`.
 
 <div align="center">
   <img src="img/piece_by_piece2.png" alt="Listing Contents" />
