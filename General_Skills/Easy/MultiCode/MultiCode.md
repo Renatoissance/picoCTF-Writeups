@@ -8,7 +8,7 @@
 
 ## 🔍 Analysis
 
-[cite_start]The challenge provides a file named `message.txt` with the following encoded string[cite: 2]:
+The challenge provides a file named `message.txt` with the following encoded string:
 `NjM3NjcwNjI1MDQ3NTMyNTM3NDI2MTcyNjY2NzcyNzE1ZjcyNjE3MDMwNzE3NjYxNzQ1ZjM4MzIzNDM5Mzk3MTZlNzEyNTM3NDQ=`
 
 ### Hints
