@@ -21,7 +21,7 @@ First, I launched the challenge instance and connected via SSH using the provide
 </div>
 
 ### Environment Inspection
-Once connected, I listed the contents of the home directory using `ls`. I identified four fragments (`part1` to `part4`) and a file named `instructions.txt`.
+Once connected, I listed the contents of the home directory using `ls`. I identified four fragments (`part_aa` to `part_ae`) and a file named `instructions.txt`.
 
 <div align="center">
   <img src="img/piece_by_piece2.png" alt="Listing Contents" />
@@ -43,10 +43,14 @@ I used `cat instructions.txt` to read the mission brief. The file contained deta
 ### 1. Combining and Testing the Fragments
 I followed the provided command to merge all four parts into a single file. Initially, I just concatenated them, but then I curiously tried to `cat` the resulting file directly to see if the flag was visible. As expected, it was a binary mess.
 
+```bash
+cat part_a* > combined_flag
+```
+
 To make the file easier to handle for the extraction tools, I renamed/saved it as `flag.zip`.
 
 ```bash
-cat part1 part2 part3 part4 > flag.zip
+cat mv combined_flag flag.zip
 ```
 
 <div align="center">
