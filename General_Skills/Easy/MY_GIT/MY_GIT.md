@@ -48,12 +48,12 @@ git config user.email "root@picoctf"
 ```
 
 <div align="center">
-  <img src="img/my_git3.png" alt="Changing Directory" width="80%" />
+  <img src="img/my_git3.png" alt="Changing Directory" width="50%" />
   <p><i>Figure 3a: Navigating into the local repository.</i></p>
   
   <br />
 
-  <img src="img/my_git4.png" alt="Configuring User Name" width="80%" />
+  <img src="img/my_git4.png" alt="Configuring User Name" width="70%" />
   <p><i>Figure 3b: Configuring the local git user name to 'root'.</i></p>
 
   <br />
@@ -70,7 +70,7 @@ echo "placeholder" > flag.txt
 ```
 
 <div align="center">
-  <img src="img/my_git6.png" alt="Creating flag.txt" />
+  <img src="img/my_git6.png" alt="Creating flag.txt" width="80%" />
   <p><i>Figure 4: Creating the placeholder 'flag.txt' file.</i></p>
 </div>
 
