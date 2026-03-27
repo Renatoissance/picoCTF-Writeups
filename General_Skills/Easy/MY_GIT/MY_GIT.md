@@ -48,10 +48,18 @@ git config user.email "root@picoctf"
 ```
 
 <div align="center">
-  <img src="img/my_git3.png" alt="Changing Directory" />
-  <img src="img/my_git4.png" alt="Configuring User Name" />
-  <img src="img/my_git5.png" alt="Configuring User Email" />
-  <p><i>Figure 3: Setting the required 'root' identity in the local repository configuration.</i></p>
+  <img src="img/my_git3.png" alt="Changing Directory" width="80%" />
+  <p><i>Figure 3a: Navigating into the local repository.</i></p>
+  
+  <br />
+
+  <img src="img/my_git4.png" alt="Configuring User Name" width="80%" />
+  <p><i>Figure 3b: Configuring the local git user name to 'root'.</i></p>
+
+  <br />
+
+  <img src="img/my_git5.png" alt="Configuring User Email" width="80%" />
+  <p><i>Figure 3c: Setting the required 'root' email address to bypass identity checks.</i></p>
 </div>
 
 ### 2. Creating the File
@@ -105,7 +113,7 @@ git push origin master
 <details>
   <summary>Click to reveal the flag</summary>
   
-  `picoCTF{1mp3rs0n4t10n_978018e6}`
+  `picoCTF{1mp3rs0n4t4_g17_345y_6877715a}`
 </details>
 
 ---
