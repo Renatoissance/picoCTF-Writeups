@@ -13,7 +13,7 @@ This challenge is a classic introduction to Rust's strict syntax and the `cargo`
 The challenge provided a small Rust project with some intentional syntax errors. The goal: fix the code to decrypt and print the flag.
 
 <div align="center">
-  <img src="rust_fixme1_1.png" alt="Terminal Navigation" width="600"/>
+  <img src="img/rust_fixme1_1.png" alt="Terminal Navigation" width="600"/>
   <p><i>Figure 1: Navigating to the project directory in the Ubuntu terminal.</i></p>
 </div>
 
@@ -21,7 +21,7 @@ The challenge provided a small Rust project with some intentional syntax errors.
 I attempted to run the program immediately with `cargo run`. In the Rust ecosystem, this command compiles your code and executes the resulting binary in one go.
 
 <div align="center">
-  <img src="rust_fixme1_2.png" alt="Cargo Build" width="600"/>
+  <img src="img/rust_fixme1_2.png" alt="Cargo Build" width="600"/>
   <p><i>Figure 2: Cargo downloading dependencies and starting the compilation process.</i></p>
 </div>
 
@@ -29,7 +29,7 @@ I attempted to run the program immediately with `cargo run`. In the Rust ecosyst
 Rust is famous for its "helpful" compiler. Instead of just crashing, it provided a detailed roadmap of every syntax error in the file.
 
 <div align="center">
-  <img src="rust_fixme1_3.png" alt="Compiler Errors" width="600"/>
+  <img src="img/rust_fixme1_3.png" alt="Compiler Errors" width="600"/>
   <p><i>Figure 3: Detailed error messages pointing out missing semicolons and invalid keywords.</i></p>
 </div>
 
@@ -46,7 +46,7 @@ The errors confirmed what the author hinted at in the code comments:
 I opened the `main.rs` file and applied the fixes as suggested by the compiler and the inline comments.
 
 <div align="center">
-  <img src="rust_fixme1_4.png" alt="Original Bugs" width="800"/>
+  <img src="img/rust_fixme1_4.png" alt="Original Bugs" width="800"/>
   <p><i>Figure 4: Visualizing the syntactical "traps" in the original source code.</i></p>
 </div>
 
@@ -59,7 +59,7 @@ I opened the `main.rs` file and applied the fixes as suggested by the compiler a
 After saving the changes, I ran `cargo run` again. This time, the code compiled successfully, executed the XOR decryption logic, and revealed the flag.
 
 <div align="center">
-  <img src="rust_fixme1_5.png" alt="Fixed Code" width="800"/>
+  <img src="img/rust_fixme1_5.png" alt="Fixed Code" width="800"/>
   <p><i>Figure 5: The corrected source code, ready for execution.</i></p>
 </div>
 
@@ -69,7 +69,7 @@ After saving the changes, I ran `cargo run` again. This time, the code compiled 
 After fixing the syntax, the program output the following flag:
 
 <div align="center">
-  <img src="rust_fixme1_6.png" alt="Flag Output" width="600"/>
+  <img src="img/rust_fixme1_6.png" alt="Flag Output" width="600"/>
   <p><i>Figure 6: The successful output in the terminal.</i></p>
 </div>
 
