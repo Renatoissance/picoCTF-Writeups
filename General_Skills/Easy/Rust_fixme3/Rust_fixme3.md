@@ -14,7 +14,7 @@ This problem requires understanding that while Rust is a memory-safe language, i
 As usual, I started with `cargo run`. While Rust's compiler is normally a helpful mentor, this time it was more of a strict guard. It flagged error E0133, telling me that calling an unsafe function like `std::slice::from_raw_parts` requires an unsafe function or block.
 
 <div align="center">
-  <img src="/img/rust_fixme3_1.png" alt="Unsafe Error" width="700"/>
+  <img src="img/rust_fixme3_1.png" alt="Unsafe Error" width="700"/>
   <p><i>Figure 1: The compiler refusing to dereference a raw pointer without explicit permission.</i></p>
 </div>
 
@@ -29,7 +29,7 @@ The fix itself was trivial, as the author provided commented-out `unsafe { ... }
 The author strategically commented out the unsafe blocks in Figure 2 to force the programmer to confront this system-level reality.
 
 <div align="center">
-  <img src="/img/rust_fixme3_2.png" alt="Code with comments" width="800"/>
+  <img src="img/rust_fixme3_2.png" alt="Code with comments" width="800"/>
   <p><i>Figure 2: The source code highlighting the commented-out unsafe block that needs to be activated.</i></p>
 </div>
 
@@ -41,7 +41,7 @@ The author strategically commented out the unsafe blocks in Figure 2 to force th
 I simply removed the comment markers (`//`) around the `unsafe { ... }` block that was already present in `src/main.rs`. This explicitly told Rust that the programmer accepts responsibility for the pointer dereferencing within that scope.
 
 <div align="center">
-  <img src="/img/rust_fixme3_3.png" alt="Fixed Code" width="800"/>
+  <img src="img/rust_fixme3_3.png" alt="Fixed Code" width="800"/>
   <p><i>Figure 3: The corrected code with the 'unsafe' scope enabled.</i></p>
 </div>
 
@@ -51,7 +51,7 @@ I simply removed the comment markers (`//`) around the `unsafe { ... }` block th
 Running `cargo run` again successfully compiled the program and revealed the flag.
 
 <div align="center">
-  <img src="/img/rust_fixme3_4.png" alt="Flag Output" width="700"/>
+  <img src="img/rust_fixme3_4.png" alt="Flag Output" width="700"/>
   <p><i>Figure 4: Final output from the terminal showing the flag.</i></p>
 </div>
 
