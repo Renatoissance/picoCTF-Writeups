@@ -2,8 +2,9 @@
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Taylor McCampbell
 
 ## 📝 Challenge Description
-"Now that you've fixed some syntax errors, let's look at how Rust handles data. Can you fix the borrowing errors to get the flag?"
-This challenge focuses on one of Rust's core pillars: **Mutability and Borrowing**.
+*"The Rust saga continues? I ask you, can I borrow that, pleeeeeaaaasseeeee?"*
+
+This challenge is a direct lesson in Rust's ownership and borrowing system. Unlike the first challenge, fixing simple syntax isn't enough; you have to understand how to move and borrow data safely.
 
 ---
 
