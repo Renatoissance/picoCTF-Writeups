@@ -13,7 +13,7 @@ This challenge focuses on one of Rust's core pillars: **Mutability and Borrowing
 As with the first challenge, I started by running `cargo run` to see how the compiler reacts. Rust’s error messages (E0596) are incredibly descriptive—it practically told me to use `&mut` before I even analyzed the logic.
 
 <div align="center">
-  <img src="rust_fixme2_1.png" alt="Borrowing Error" width="700"/>
+  <img src="img/rust_fixme2_1.png" alt="Borrowing Error" width="700"/>
   <p><i>Figure 1: The compiler explaining that I cannot borrow a string as mutable if it's behind a shared reference.</i></p>
 </div>
 
@@ -27,7 +27,7 @@ In Rust, variables are **immutable by default**. To fix the code in `rust_fixme2
 **The Rule of Thumb:** You can have many readers (`&T`), but only ever **one** writer (`&mut T`) at a time. This prevents "Data Races" at compile time, something languages like C or Java struggle with at runtime.
 
 <div align="center">
-  <img src="rust_fixme2_2.png" alt="Code Bugs" width="800"/>
+  <img src="img/rust_fixme2_2.png" alt="Code Bugs" width="800"/>
   <p><i>Figure 2: Identifying the missing 'mut' keywords in the original source.</i></p>
 </div>
 
@@ -42,7 +42,7 @@ I applied the `mut` keyword in three strategic locations:
 * **The function signature:** `fn decrypt(..., borrowed_string: &mut String)` (Declaring that this function *will* modify the input).
 
 <div align="center">
-  <img src="rust_fixme2_3.png" alt="Fixed Code" width="800"/>
+  <img src="img/rust_fixme2_3.png" alt="Fixed Code" width="800"/>
   <p><i>Figure 3: The corrected code using mutable references.</i></p>
 </div>
 
@@ -52,7 +52,7 @@ I applied the `mut` keyword in three strategic locations:
 Running the corrected program successfully modified the string and decrypted the flag.
 
 <div align="center">
-  <img src="rust_fixme2_4.png" alt="Flag Output" width="700"/>
+  <img src="img/rust_fixme2_4.png" alt="Flag Output" width="700"/>
   <p><i>Figure 4: Final output showing the combined string and flag.</i></p>
 </div>
 
