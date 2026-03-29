@@ -72,8 +72,11 @@ After fixing the syntax, the program output the following flag:
   <img src="img/rust_fixme1_6.png" alt="Flag Output" width="600"/>
   <p><i>Figure 6: The successful output in the terminal.</i></p>
 </div>
-
-> **picoCTF{4r3_y0u_4_ru$t4c30n_n0w?}**
+<details>
+  <summary>Click to reveal the flag</summary>
+  
+  `picoCTF{4r3_y0u_4_ru$t4c30n_n0w?}`
+</details>
 
 ---
 
