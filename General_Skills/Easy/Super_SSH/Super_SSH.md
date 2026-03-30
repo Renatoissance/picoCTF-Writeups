@@ -36,8 +36,11 @@ I performed the connection within a local **Ubuntu 22.04 environment running in 
 
 ## 🚩 Final Flag
 After the successful handshake and login, the server revealed:
-
-> **picoCTF{s3cur3_c0nn3ct10n_8306c99d}**
+<details>
+  <summary>Click to reveal the flag</summary>
+  
+  `picoCTF{s3cur3_c0nn3ct10n_8306c99d}`
+</details>
 
 ---
 
