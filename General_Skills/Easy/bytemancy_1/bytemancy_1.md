@@ -21,12 +21,12 @@ As established in the ASCII table in **bytemancy_1_2.png**:
 However, there is a catch: The program doesn't just want three 'e's. It asks for a massive, absurd amount of them: **1751 times**. Typing this manually in my **Ubuntu VM** would not only be prone to error but physically impossible within the instance's time limit.
 
 <div align="center">
-  <img src="bytemancy_1_1.png" alt="Source Code" width="800"/>
+  <img src="img/bytemancy_1_1.png" alt="Source Code" width="800"/>
   <p><i>Figure 1: The source code reveals the ASCII logic at a much higher frequency.</i></p>
 </div>
 
 <div align="center">
-  <img src="bytemancy_1_2.png" alt="ASCII Table" width="800"/>
+  <img src="img/bytemancy_1_2.png" alt="ASCII Table" width="800"/>
   <p><i>Figure 2: ASCII table confirming that Decimal 101 is the letter 'e'.</i></p>
 </div>
 
@@ -48,7 +48,7 @@ The breakthrough command executed in the **Ubuntu terminal** was:
 * **`nc ...`**: Netcat receives the 1751 'e's instantly as if I had typed them at lightning speed.
 
 <div align="center">
-  <img src="bytemancy_1_3.png" alt="Automation Success" width="800"/>
+  <img src="img/bytemancy_1_3.png" alt="Automation Success" width="800"/>
   <p><i>Figure 3: Using Python to automate the input and capturing the flag in Ubuntu.</i></p>
 </div>
 
