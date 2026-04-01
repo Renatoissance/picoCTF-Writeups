@@ -77,7 +77,13 @@ Finally, I checked my local directory again. The file `flag.txt` was now there, 
 ---
 
 ## 🚩 Final Flag
-`picoCTF{5mb_pr1nter_5h4re5_8caa47ce}`
+After retrieving the file from the remote print server, the file contained the following flag:
+
+<details>
+  <summary>Click to reveal the flag</summary>
+  
+  `picoCTF{5mb_pr1nter_5h4re5_8caa47ce}`
+</details>
 
 ---
 
