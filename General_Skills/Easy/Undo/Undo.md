@@ -6,6 +6,9 @@
 
 This challenge tests your knowledge of basic Linux text manipulation commands. You connect to a remote server which feeds you a mangled string and gives you hints about how it was altered. You must provide the correct Linux command to reverse each step.
 
+
+> **Note:** This challenge uses **dynamic instances**. You must launch your own challenge instance on the picoCTF platform to get the specific host URL and port for your `nc` (Netcat) connection.
+
 ---
 
 ## 🔍 Analysis
