@@ -1,5 +1,5 @@
 # 🔮 Challenge: Undo
-**Category:** General Skills | **Difficulty:** Easy/Medium | **Author:** Yahaya Meddy
+**Category:** General Skills | **Difficulty:** Easy | **Author:** Yahaya Meddy
 
 ## 📝 Challenge Description
 *"Can you reverse a series of Linux text transformations to recover the original flag? Start searching for the flag here nc foggy-cliff.picoctf.net 51154"*
@@ -22,9 +22,9 @@ To solve this, I had to analyze the hint provided at each step and figure out th
 The server provided a massive alphanumeric string and stated it was Base64 encoded.
 To reverse this, I used the `base64` command with the decode flag (`-d`).
 
-\`\`\`bash
+```bash
 base64 -d
-\`\`\`
+```
 
 <div align="center">
   <img src="img/undo1.png" alt="Step 1 - Base64 Decoding" width="800"/>
@@ -35,9 +35,9 @@ base64 -d
 The output from Step 1 was backward (e.g., `)os8r00...`). The hint confirmed the text was reversed. 
 The easiest way to reverse a string back to its original form in Linux is the `rev` command.
 
-\`\`\`bash
+```bash
 rev
-\`\`\`
+```
 
 <div align="center">
   <img src="img/undo2.png" alt="Step 2 - Reverse" width="800"/>
@@ -47,9 +47,9 @@ rev
 ### Step 3: Swapping Dashes and Underscores
 The string now looked closer to a flag, but the hint said: *"Replaced underscores with dashes."* This means I had to turn the dashes *back* into underscores. I used the translate command (`tr`) for this character substitution.
 
-\`\`\`bash
+```bash
 tr '-' '_'
-\`\`\`
+```
 
 <div align="center">
   <img src="img/undo3.png" alt="Step 3 - tr command for dashes" width="800"/>
@@ -60,9 +60,9 @@ tr '-' '_'
 The flag format requires curly braces `{}`, but the string had parentheses `()`. 
 I used `tr` again, this time mapping multiple characters at once (mapping the open parenthesis to an open brace, and the close parenthesis to a close brace).
 
-\`\`\`bash
+```bash
 tr '()' '{}'
-\`\`\`
+```
 
 <div align="center">
   <img src="img/undo4.png" alt="Step 4 - tr command for brackets" width="800"/>
@@ -73,9 +73,9 @@ tr '()' '{}'
 The final string was perfectly formatted (`cvpbPGS{...}`) but the letters were scrambled. The hint confirmed it was a ROT13 cipher.
 To reverse ROT13, you just shift the alphabet by 13 places again. I used `tr` to map the first half of the alphabet to the second half, preserving both uppercase and lowercase letters.
 
-\`\`\`bash
+```bash
 tr 'A-Za-z' 'N-ZA-Mn-za-m'
-\`\`\`
+```
 
 <div align="center">
   <img src="img/undo5.png" alt="Step 5 - ROT13" width="800"/>
@@ -85,6 +85,7 @@ tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ---
 
 ## 🚩 Final Flag
+
 <details>
   <summary>Click to reveal the flag</summary>
   
