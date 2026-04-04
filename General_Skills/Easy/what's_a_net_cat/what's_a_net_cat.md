@@ -6,6 +6,8 @@
 
 This is a fundamental challenge designed to introduce `nc` (Netcat), often referred to as the "Swiss Army knife" of networking, which is essential for interacting with remote CTF instances.
 
+> **Note:** This challenge uses **dynamic instances**. You must launch your own challenge instance on the picoCTF platform to get the specific host URL and port for your `nc` (Netcat) connection.
+
 ---
 
 ## 🔍 Analysis & The "Colon" Misconception
