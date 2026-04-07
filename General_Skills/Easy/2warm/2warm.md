@@ -32,8 +32,6 @@ I utilized a standard base converter to translate the decimal value. Entering `4
 ### Step 2: Flag Formatting
 Wrapping the binary result in the required picoCTF format:
 
-**Flag:** `picoCTF{101010}`
-
 ---
 
 ## 🚩 Final Flag
