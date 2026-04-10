@@ -6,6 +6,8 @@
 
 This challenge introduces a common scenario where a server communicates using raw decimal ASCII codes instead of plaintext. The goal is to capture the stream and decode it into a human-readable format.
 
+> **Note:** This challenge uses **dynamic instances**. You must launch your own challenge instance on the picoCTF platform to get the specific host URL and port for your `nc` (Netcat) connection.
+
 ---
 
 ## 🔍 Analysis
