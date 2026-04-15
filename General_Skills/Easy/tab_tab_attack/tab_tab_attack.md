@@ -30,7 +30,7 @@ Instead of typing the full path to navigate through the folders or execute the h
 Once the path was fully auto-completed via Tab spamming, pressing `Enter` executed the final binary (`fang-of-haynekhtnamet`) located at the deepest level of the directory tree. The binary immediately output the flag.
 
 <div align="center">
-  <img src="img/tab_tab_attack.png" alt="Execution using Tab Completion" width="800"/>
+  <img src="img/tab_tab_attack.png" alt="Execution using Tab Completion" width="100%"/>
   <p><i>Figure 1: Executing the deeply nested binary instantly after auto-completing the path.</i></p>
 </div>
 
