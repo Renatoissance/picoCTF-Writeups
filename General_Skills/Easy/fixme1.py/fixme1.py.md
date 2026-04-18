@@ -15,6 +15,11 @@ Looking at the source code in the editor, two anomalies stand out:
 1. **Unused Import:** There is an `import random` statement at the top of the script. While this is technically inefficient, it does not cause a syntax error.
 2. **Indentation Error:** The final `print(...)` statement contains leading spaces. In Python, indentation is used to define code blocks (such as those within loops or functions). Since this print statement is in the global scope and not part of any block, it must be completely flush with the left margin.
 
+<div align="center">
+  <img src="img/fixme1.py_1.png" alt="Code Editor showing Indentation Error" width="100%">
+  <p><i>Figure 1: The code editor reveals leading spaces before the final print statement, breaking Python's strict indentation rules. It also highlights an unused random import.</i></p>
+</div>
+
 ---
 
 ## 🛠️ Solution
