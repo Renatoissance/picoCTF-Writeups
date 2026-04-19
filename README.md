@@ -1,27 +1,24 @@
-# picoCTF-Writeups 🚩
+# 🚩 picoCTF - Cybersecurity Journey & Writeups
 
-Welcome to my cybersecurity portfolio. This repository documents my technical journey through **picoCTF** challenges, focusing on practical problem-solving and security fundamentals.
+Welcome to my technical portfolio. This repository documents my progression through **picoCTF**, demonstrating my practical problem-solving skills and evolving understanding of security fundamentals.
 
-## 🎯 Project Goal
-The purpose of this repository is to demonstrate my ability to analyze vulnerabilities, use industry-standard tools, and document technical processes clearly. My goal is to build a solid foundation for a career in **Cybersecurity (Junior/Trainee level)**.
+## 🎯 Objective
+This project serves as a living document of my technical capabilities. My primary goal is to build a robust foundation in offensive and defensive security concepts, aiming for a role as a **Junior Cybersecurity Analyst / Trainee**.
 
-## 🛠️ Skills & Tools Covered
-Through these challenges, I am actively developing skills in:
-* **Linux Command Line:** File system navigation, permissions, and log analysis.
-* **Web Exploitation:** Understanding SQLi, XSS, and Cookie manipulation.
-* **Cryptography:** Working with XOR, Base64, RSA, and ROT13 ciphers.
-* **Forensics:** Analyzing file headers, metadata, and hidden data (Steganography).
-* **Scripting:** Automating tasks using Python and Bash.
+## 🛠️ Technical Proficiencies Developed
+Through consistent practice, I am honing my skills in several core domains:
 
-## 📖 Methodology
-Each writeup in this repository follows a structured approach:
-1. **Analysis:** Understanding the challenge and identifying the potential vulnerability.
-2. **Exploitation:** Step-by-step walkthrough of the solution.
-3. **Key Takeaways:** What I learned and how to prevent such vulnerabilities in a real-world scenario.
+* **Linux / Command Line Operations:** Advanced `grep` usage, file permissions, scripting, and system navigation.
+* **Cryptography:** Cipher identification, Base64/Hex encoding, and basic encryption algorithms.
+* **Binary Exploitation & Forensics:** Static analysis, strings extraction, and identifying hidden data.
+* **Programming / Scripting:** Debugging Python syntax and automating extraction processes.
 
----
+## 📖 My Methodology
+I approach every challenge with a consultant mindset. My writeups aren't just "how to get the flag," but rather:
+1. **Initial Reconnaissance:** Analyzing the provided artifacts.
+2. **Execution:** Step-by-step exploitation using standard industry tools.
+3. **Key Takeaways:** Extracting the underlying security principles to apply them to real-world scenarios.
 
-## ⚠️ Disclaimer & Spoiler Warning
-This repository is for **educational purposes only**. 
-
-**Spoiler Alert:** These writeups contain full solutions and flags for picoCTF challenges. I highly recommend trying to solve the challenges on your own before referring to these documents. Use them to learn from my methodology if you get stuck!
+## ⚠️ Disclaimer
+All information and techniques documented here are for **educational purposes only**. 
+**Spoiler Warning:** This repository contains direct solutions and flags for picoCTF challenges. Please attempt the challenges independently before consulting these writeups.
