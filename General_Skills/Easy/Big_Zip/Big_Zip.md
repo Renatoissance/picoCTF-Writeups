@@ -29,7 +29,7 @@ Get-ChildItem -Recurse -File | Select-String -Pattern "picoCTF{"
 * `|` (Pipe): Passes the output (the list of files) directly to the next command.
 * `Select-String -Pattern "picoCTF{"`: Reads the content of each file and searches for the specified string pattern.
 
-![Recursive Search in PowerShell](Big_Zip.png)
+![Recursive Search in PowerShell](img/Big_Zip.png)
 *Figure 1: PowerShell terminal output showing the exact file path and the line containing the hidden flag.*
 
 *(Note: In a Unix/Linux environment, the exact same result can be achieved using `grep -R "picoCTF{" .`)*
