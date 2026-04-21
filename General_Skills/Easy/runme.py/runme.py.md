@@ -19,6 +19,7 @@ python3 runme.py
 The script ran successfully and immediately printed the flag to the standard output.
 
 ![Execution of runme.py in Linux Terminal](img/runme.py.png)
+
 *Figure 1: Executing the script via the Linux CLI.*
 
 ## 🚩 Final Flag
