@@ -26,12 +26,15 @@ After connecting in Terminal 1, the server asked for the hash of `'coconuts'`. I
 ```bash
 echo -n 'coconuts' | md5sum
 ```
+
 ![Hashing coconuts](img/HashingJobApp2.png)
+
 *Figure 1: Calculating the MD5 hash for 'coconuts' in Terminal 2.*
 
 I copied the resulting hash and submitted it in Terminal 1, successfully passing the first check.
 
 ![Submitting coconuts](img/HashingJobApp1.png)
+
 *Figure 2: Submitting the first hash.*
 
 #### Round 2: 'a car crash'
@@ -40,12 +43,15 @@ The server immediately prompted for the next string: `'a car crash'`. I repeated
 ```bash
 echo -n 'a car crash' | md5sum
 ```
+
 ![Hashing a car crash](img/HashingJobApp4.png)
+
 *Figure 3: Calculating the MD5 hash for 'a car crash'.*
 
 I pasted this second hash into Terminal 1 to pass the second check.
 
 ![Submitting a car crash](img/HashingJobApp3.png)
+
 *Figure 4: Submitting the second hash.*
 
 #### Round 3: 'a honeymoon'
@@ -54,12 +60,15 @@ The final prompt asked for the hash of `'a honeymoon'`. One last calculation in 
 ```bash
 echo -n 'a honeymoon' | md5sum
 ```
+
 ![Hashing a honeymoon](img/HashingJobApp6.png)
+
 *Figure 5: Calculating the final MD5 hash for 'a honeymoon'.*
 
 Submitting this third and final hash successfully beat the test, and the server revealed the flag.
 
 ![Submitting a honeymoon and getting the flag](img/HashingJobApp5.png)
+
 *Figure 6: Submitting the final hash and receiving the flag.*
 
 ## 🚩 Final Flag
