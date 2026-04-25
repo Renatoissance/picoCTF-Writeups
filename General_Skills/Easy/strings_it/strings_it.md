@@ -1,14 +1,14 @@
-# 🔮 Challenge: strings it
+# Challenge: strings it
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Sanjay C/Danny Tunitis
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you find the flag in file without running it?"*
 
 This challenge introduces a fundamental concept in digital forensics and reverse engineering: static analysis. Before executing an unknown (and potentially malicious) binary, one should always extract its human-readable strings to find hardcoded credentials, URLs, or in this case, the flag.
 
 ---
 
-## 🔍 Analysis & Solutions
+## Analysis & Solutions
 
 The challenge provides a file simply named `strings` and explicitly forbids running it. When dealing with compiled binaries, opening them directly usually results in a garbled mess of binary data, but the printable characters remain intact. 
 
@@ -55,7 +55,7 @@ strings ./strings | grep "picoCTF"
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Static Analysis:** Never run unknown binaries immediately. Always inspect their contents first.
 * **The `strings` Utility:** The most efficient way to extract human-readable text from non-text files in Linux.
 * **Command Piping:** Combining `strings` with `grep` is a mandatory skill for quickly searching through massive amounts of data in CTF challenges.
