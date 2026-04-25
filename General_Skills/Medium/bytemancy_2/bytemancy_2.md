@@ -1,14 +1,14 @@
-# 🔮 Challenge: Bytemancy 2
+# Challenge: Bytemancy 2
 **Category:** General Skills | **Difficulty:** Medium | **Author:** LT 'syreal' Jones
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you conjure the right bytes? The program's source code can be downloaded here. Additional details will be available after launching your challenge instance."*
 
 > **Note:** This challenge uses **dynamic instances**. You must launch your own instance to get the specific host URL and port. The solution scripts must be updated accordingly.
 
 ---
 
-## 🛑 The Struggle: An Honest Analysis
+## The Struggle: An Honest Analysis
 This challenge was a rollercoaster. It perfectly demonstrated that sometimes the biggest hurdles in a CTF aren't the challenges themselves, but the environment and misunderstandings of how terminal inputs work.
 
 ### Fail 1: The Keyboard Illusion
@@ -50,7 +50,7 @@ Before I could even fix the script, my local Ubuntu VirtualBox environment compl
 
 ---
 
-## 🛠️ The Final Solution
+## The Final Solution
 
 After surviving environment hell, I wrote the final, bulletproof script. Instead of `recvall()`, I used `conn.clean(timeout=2)` to simply flush whatever the server spit out after 1 second of waiting. 
 
@@ -79,7 +79,7 @@ Executing this script bypassed all terminal input limitations, satisfied the ser
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Raw Network I/O:** Standard terminal keyboards cannot send raw unprintable bytes. `pwntools` is essential for interacting with raw socket streams.
 * **Read the Source:** Analyzing `sys.stdin.buffer.readline().rstrip(b"\n")` revealed that a newline (`\n`) was strictly required to bypass the blocking read.
 * **Buffer Management:** Never use `recvall()` against a server running an infinite `while(True)` loop. Use `time.sleep()` and `conn.clean()` to pull data from a persistently open connection.
