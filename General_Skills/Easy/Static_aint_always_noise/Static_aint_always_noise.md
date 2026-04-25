@@ -1,14 +1,14 @@
-# 🔮 Challenge: Static ain't always noise
+# Challenge: Static ain't always noise
 **Category:** General Skills | **Difficulty:** Easy | **Author:** syreal
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you look at the data in this binary? The bash script might help!"*
 
 This challenge demonstrates how to extract human-readable information from a compiled binary file using both provided helper scripts and standard Linux utilities like `strings` and `grep`.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 We are provided with two files:
 1. `static`: A compiled binary file (ELF).
 2. `ltdis.sh`: A shell script designed to assist in "dissecting" the binary.
@@ -26,7 +26,7 @@ The script is a wrapper. It checks if the input file is a valid binary and then 
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Managing Permissions with `chmod +x`
 By default, newly downloaded scripts often lack the permission to be executed for security reasons. To run the script, I had to modify its **file mode**:
@@ -67,7 +67,7 @@ grep "picoCTF" static.ltdis.strings.txt
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Linux Permissions:** Files are not executable by default; `chmod +x` is the standard way to enable script execution.
 * **Static Analysis Tools:** Helper scripts often hide the complexity of tools like `objdump` (for disassembly) and `strings`.
 * **Binary Forensics:** Even without running a program, sensitive data can be recovered from its static structure.
