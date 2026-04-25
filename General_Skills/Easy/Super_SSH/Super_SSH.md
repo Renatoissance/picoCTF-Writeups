@@ -1,14 +1,14 @@
 # Challenge: Super SSH
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Jeffery John
 
-## 📝 Challenge Description
+## Challenge Description
 *"Using a Secure Shell (SSH) is going to be pretty important. Can you ssh as ctf-player to titan.picoctf.net at port 56090 to get the flag?"*
 
 > **Note:** This challenge uses **dynamic instances**. Each user is assigned a unique SSH connection string and a custom password for the initial login.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 ### The SSH Protocol
 To solve this, I connected to a remote host using the parameters provided in my specific instance:
@@ -44,7 +44,7 @@ After the successful handshake and login, the server revealed:
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Dynamic Instances:** Recognized that ports and passwords vary per user session in this challenge.
 * **SSH Basics:** Mastered the use of custom ports and host verification.
 * **Environment:** Successfully managed the connection using a Linux Virtual Machine.
