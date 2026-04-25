@@ -1,7 +1,7 @@
-# 🔮 Challenge: Undo
+# Challenge: Undo
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Yahaya Meddy
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you reverse a series of Linux text transformations to recover the original flag? Start searching for the flag here nc foggy-cliff.picoctf.net 51154"*
 
 This challenge tests your knowledge of basic Linux text manipulation commands. You connect to a remote server which feeds you a mangled string and gives you hints about how it was altered. You must provide the correct Linux command to reverse each step.
@@ -11,7 +11,7 @@ This challenge tests your knowledge of basic Linux text manipulation commands. Y
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 The challenge environment is accessed via `nc` (Netcat). Instead of a standard shell, you are greeted by an interactive prompt that requires you to "undo" transformations step-by-step. 
 
@@ -19,7 +19,7 @@ To solve this, I had to analyze the hint provided at each step and figure out th
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Base64 Decoding
 The server provided a massive alphanumeric string and stated it was Base64 encoded.
@@ -97,7 +97,7 @@ tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 ---
 
-## 💡 What I learned
+## What I learned
 * **Command Inversion:** Understanding that you have to think backward (e.g., if the server replaced `_` with `-`, the command must replace `-` with `_`).
 * **The Power of `tr`:** The translate utility is incredibly versatile for single character swaps, multi-character mapping, and even building custom cipher decoders like ROT13 directly in the CLI.
 * **Interactive CLI Challenges:** Using native Linux tools to solve multi-stage string manipulation on the fly.
