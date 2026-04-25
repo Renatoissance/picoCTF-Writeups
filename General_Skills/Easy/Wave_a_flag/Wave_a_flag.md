@@ -1,21 +1,21 @@
-# 🚩 Challenge: Wave a flag
+# Challenge: Wave a flag
 **Category:** General Skills | **Difficulty:** Easy | **Author:** syreal
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you invoke help flags for a tool or binary? This program has extraordinarily helpful information... binary: warm"*
 
 This challenge focuses on interacting with binaries using CLI arguments and discovery flags to reveal hidden functionality or information.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 The provided file `warm` is a compiled Linux binary. Executing it without arguments results in a prompt suggesting the use of a help flag:
 
 > *"Hello user! Pass me a -h to learn what I can do!"*
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Execution with the Help Flag
 Following the hint provided by the binary, I executed the program with the `-h` flag. This triggered a specific logic branch within the code, revealing the flag.
@@ -45,7 +45,7 @@ To demonstrate efficient data extraction—a key skill in security automation—
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **CLI Discovery**: Help flags (`-h`, `--help`) are the primary method of reconnaissance when analyzing unknown binaries.
 * **Data Piping**: Using pipes with `grep` allows for rapid, automated extraction of specific data like flags.
 * **Execution Flow**: Programs often contain hidden messages or functions accessible only through specific command-line arguments.
