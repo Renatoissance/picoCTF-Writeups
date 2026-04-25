@@ -1,7 +1,7 @@
-# 🔮 Challenge: what's a net cat?
+# Challenge: what's a net cat?
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Sanjay C/Danny Tunitis
 
-## 📝 Challenge Description
+## Challenge Description
 *"Using netcat (nc) is going to be pretty important. Can you connect to fickle-tempest.picoctf.net at port 56690 to get the flag?"*
 
 This is a fundamental challenge designed to introduce `nc` (Netcat), often referred to as the "Swiss Army knife" of networking, which is essential for interacting with remote CTF instances.
@@ -10,7 +10,7 @@ This is a fundamental challenge designed to introduce `nc` (Netcat), often refer
 
 ---
 
-## 🔍 Analysis & The "Colon" Misconception
+## Analysis & The "Colon" Misconception
 
 Coming from web development and standard network URIs, one might assume the connection format follows the standard `host:port` syntax (e.g., `http://url:port`). 
 
@@ -29,7 +29,7 @@ The terminal threw an error: `nc: missing port number`.
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 To fix this, I simply replaced the colon with a space, strictly following the `nc [hostname] [port]` syntax.
 
@@ -56,6 +56,6 @@ The server immediately responded with a congratulatory message and the flag.
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **CLI vs. Web Syntax:** Command-line utilities (like `nc`, `ssh`, etc.) generally use spaces to separate hosts and ports as positional arguments, whereas web URIs use the `host:port` format.
 * **Tool Mastery:** Netcat is the absolute standard for communicating with raw TCP/UDP sockets in CTF challenges.
