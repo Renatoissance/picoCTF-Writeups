@@ -1,14 +1,14 @@
 # Challenge: My Git
 **Category:** General Skills | **Difficulty:** Easy | **Author:** DARKRAICG492
 
-## 📝 Challenge Description
+## Challenge Description
 I have built my own Git server with my own rules! You can clone the challenge repo using the command below. Check the README to get your flag!
 
 > **Note:** This challenge uses **dynamic instances**. Each user is assigned a unique SSH clone link and a custom password/credential set upon launching the instance.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 The challenge provides a custom Git server and a specific set of rules to obtain the flag.
 
@@ -36,7 +36,7 @@ The server implements a hook that checks the author's identity. To succeed, I ne
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### 1. Impersonation
 I navigated into the repository and updated the local Git configuration to match the required credentials.
@@ -118,7 +118,7 @@ git push origin master
 
 ---
 
-## 💡 What I learned
+## What I learned
 * **Git Configuration:** Overriding global settings with local repository-specific identities.
 * **Git Workflow:** Proper use of the staging area (`git add`) for new files.
 * **Identity Hooks:** Understanding how Git servers use metadata (User/Email) for access control or automated tasks.
