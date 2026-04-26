@@ -1,7 +1,7 @@
-# 🔮 Challenge: Bytemancy 1
+# Challenge: Bytemancy 1
 **Category:** General Skills | **Difficulty:** Easy | **Author:** LT 'syreal' Jones | **Environment:** Ubuntu 22.04 (VirtualBox)
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you conjure the right bytes? Connect to the program with netcat."*
 
 This challenge is the direct evolution of Bytemancy 0. While the logic remains the same, the scale changes drastically, forcing the transition from manual input to automation.
@@ -10,7 +10,7 @@ This challenge is the direct evolution of Bytemancy 0. While the logic remains t
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 ### 1. The Scaling Problem
 Looking at the source code in **bytemancy_1_1.png**, the requirement is clear: the program wants the ASCII character for decimal 101.
@@ -37,7 +37,7 @@ Instead of opening `nc` and typing manually, I used a **Python One-Liner** to ge
 
 ---
 
-## 🛠️ The Solution: Piping & Automation
+## The Solution: Piping & Automation
 
 The breakthrough command executed in the **Ubuntu terminal** was:
 `python3 -c "print('e' * 1751)" | nc foggy-cliff.picoctf.net 55101`
@@ -61,7 +61,7 @@ The server accepted the automated flood of bytes and returned the flag:
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Automation is Key:** In cybersecurity, if a task is repetitive and absurdly large, it's a hint to automate it.
 * **The Power of Pipes:** Mastered the `|` operator in Linux to chain processes together.
 * **Ubuntu/VirtualBox Advantage:** Using a native Linux terminal allowed for seamless piping and tool access (nc/python3) which is more efficient than manual Windows input.
