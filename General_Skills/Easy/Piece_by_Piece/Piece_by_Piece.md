@@ -1,14 +1,14 @@
 # Challenge: Piece by Piece
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Yahaya Meddy
 
-## 📝 Challenge Description
+## Challenge Description
 After logging in, you will find multiple file parts in your home directory. These parts need to be combined and extracted to reveal the flag.
 
 > **Note:** This challenge uses **dynamic instances**. Each user is assigned a unique SSH connection string and a custom password for the initial login.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 The challenge environment is a remote Linux server. The objective is to gather fragmented files, identify a hidden password, and reconstruct a protected archive.
 
@@ -38,7 +38,7 @@ I used `cat instructions.txt` to read the mission brief. The file contained deta
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### 1. Combining and Testing the Fragments
 I followed the provided command to merge all four parts into a single file. Initially, I just concatenated them, but then I curiously tried to `cat` the resulting file directly to see if the flag was visible. As expected, it was a binary mess.
@@ -84,7 +84,7 @@ After entering the password successfully, the archive was extracted. The final s
 
 ---
 
-## 💡 What I learned
+## What I learned
 * **SSH Interaction:** Connecting to remote challenge instances with custom credentials.
 * **Information Gathering:** Reading instructional files to find hidden passwords.
 * **Archive Handling:** Using `cat` to reconstruct split files and `unzip` to handle protected archives.
