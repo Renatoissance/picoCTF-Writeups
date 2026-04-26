@@ -1,14 +1,14 @@
-# 🚩 Challenge: fixme1.py
+# Challenge: fixme1.py
 **Category:** General Skills | **Difficulty:** Easy | **Author:** LT 'syreal' Jones
 
-## 📝 Challenge Description
+## Challenge Description
 *"Fix the syntax error in this Python script to print the flag."*
 
 This challenge introduces fundamental Python syntax rules, specifically focusing on how Python handles code blocks and whitespace formatting.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 The provided file is a Python script designed to decrypt a string using a basic XOR operation. However, attempting to run it immediately throws an `IndentationError`. 
 
 Looking at the source code in the editor, two anomalies stand out:
@@ -22,7 +22,7 @@ Looking at the source code in the editor, two anomalies stand out:
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Fixing the Syntax
 I opened the `fixme1.py` file in a text editor and deleted the extraneous spaces at the beginning of the last line. 
@@ -52,6 +52,6 @@ The script ran flawlessly, performed the XOR decryption, and printed the flag to
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Strict Whitespace:** Unlike languages that use curly braces `{}`, Python relies entirely on indentation to interpret program structure.
 * **Debugging Basics:** Recognizing and resolving an `IndentationError` is one of the first and most critical skills when reverse-engineering or patching Python scripts.
