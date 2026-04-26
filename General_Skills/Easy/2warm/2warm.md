@@ -1,14 +1,14 @@
-# 🔮 Challenge: 2warm
+# Challenge: 2warm
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Sanjay C/Danny Tunitis
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you convert the number 42 (base 10) to binary (base 2)?"*
 
 This challenge is a direct follow-up to previous "Warm Up" tasks, focusing on the most fundamental numbering system in computing: **Binary (Base 2)**.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 In computing, all data is ultimately represented as binary. While we use Decimal (Base 10) in our daily lives, computers use bistable states (0 and 1). 
 
 The goal is a simple mathematical conversion:
@@ -19,7 +19,7 @@ The number **42** is a famous reference in geek culture (The Hitchhiker's Guide 
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Conversion
 I utilized a standard base converter to translate the decimal value. Entering `42` as the input (Base 10) and selecting Binary (Base 2) as the target yielded the result: `101010`.
@@ -43,6 +43,6 @@ Wrapping the binary result in the required picoCTF format:
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Binary Fundamentals:** Understanding that each position in a binary number represents a power of 2 (32 + 8 + 2 = 42).
 * **Efficiency:** Knowing when to use quick conversion tools to maintain momentum during a CTF.
