@@ -1,14 +1,14 @@
-# 🖨️ Challenge: Printer Shares
+# Challenge: Printer Shares
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Janice He | **Environment:** Ubuntu 22.04 (VirtualBox)
 
-## 📝 Challenge Description
+## Challenge Description
 *"Oops! Someone accidentally sent an important file to a network printer—can you retrieve it from the print server?"*
 
 The challenge points to a network printer hosted on port **58899**. We are tasked with intercepting or retrieving a file that was "accidentally" sent to this print server.
 
 ---
 
-## 🔍 Analysis & The "Local vs. Remote" Trap
+## Analysis & The "Local vs. Remote" Trap
 
 ### 1. Testing the Connection
 The challenge starts with a suggested command: `nc -vz mysterious-sea.picoctf.net 58899`. 
@@ -39,7 +39,7 @@ This was the "Aha!" moment. Printers and network file shares commonly use **SMB 
 
 ---
 
-## 🛠️ The Solution: SMB Enumeration
+## The Solution: SMB Enumeration
 
 ### Step 1: Listing Remote Shares
 I used `smbclient` to ask the server for its public folders (Shares).
@@ -87,7 +87,7 @@ After retrieving the file from the remote print server, the file contained the f
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Netcat is a Probe, not a Shell:** `nc -vz` is great for checking if a service exists, but it won't let you browse files if the protocol (like SMB) requires a specific client.
 * **Don't browse your own PC:** If you run `ls` and see "Desktop" or "Downloads," you haven't actually moved into the target server yet!
 * **Guest Access Vulnerabilities:** SMB shares are often left open with "Guest" permissions, making them a prime target for data leaks in network environments.
