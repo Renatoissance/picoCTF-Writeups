@@ -1,14 +1,14 @@
-# 🚩 Challenge: fixme2.py
+# Challenge: fixme2.py
 **Category:** General Skills | **Difficulty:** Easy | **Author:** LT 'syreal' Jones
 
-## 📝 Challenge Description
+## Challenge Description
 *"Fix the syntax error in the Python script to print the flag."*
 
 This challenge focuses on a very common logical syntax error in programming: confusing the assignment operator with the equality operator.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 The provided file is a Python script that decrypts a string using a basic XOR operation. However, attempting to run it immediately throws a `SyntaxError: invalid syntax`. 
 
 Looking at the source code in the editor, the issue is located in the `if` statement at the bottom of the script:
@@ -22,7 +22,7 @@ In Python, `if flag = "":` is invalid because you cannot assign a variable insid
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Fixing the Logic Error
 I opened the `fixme2.py` file and changed the assignment operator (`=`) to the equality operator (`==`).
@@ -60,6 +60,6 @@ python3 fixme2.py
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Operator Distinction:** Understanding the critical difference between `=` (Assignment) and `==` (Equality check).
 * **Syntax Debugging:** Python error tracebacks clearly point to the line where syntax rules are violated, making it easy to spot logical typos like this.
