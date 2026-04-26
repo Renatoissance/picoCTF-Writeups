@@ -1,7 +1,7 @@
-# 🔮 Challenge: Bytemancy 0
+# Challenge: Bytemancy 0
 **Category:** General Skills | **Difficulty:** Easy | **Author:** LT 'syreal' Jones
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you conjure the right bytes? The program's source code can be downloaded here. Connect to the program with netcat."*
 
 This challenge is a perfect entry point into understanding how data is represented in different formats (Decimal, Hex, ASCII) and how network-hosted services work.
@@ -10,7 +10,7 @@ This challenge is a perfect entry point into understanding how data is represent
 
 ---
 
-## 🔍 Step-by-Step Analysis
+## Step-by-Step Analysis
 
 ### Phase 1: Code Review (The Blueprint)
 I started by downloading and inspecting the Python source code in my VirtualBox Ubuntu environment. The program was designed to act as a gatekeeper. 
@@ -59,7 +59,7 @@ To see if I could "fake" the success state, I created an empty `flag.txt` file i
 
 ---
 
-## 🛠️ The Solution: Remote Execution
+## The Solution: Remote Execution
 
 ### Using Netcat (nc)
 Finally, I launched the instance and used `netcat` to connect to the actual challenge server. Netcat is a powerful networking utility used to read from and write to network connections.
@@ -86,7 +86,7 @@ Finally, I launched the instance and used `netcat` to connect to the actual chal
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Data Representation:** ASCII values are just numbers that computers interpret as characters. Decimal 101, Hex 0x65, and 'e' are the same thing.
 * **Local vs. Remote:** A script is just a tool; the data (the flag) is the prize stored on the server.
 * **Netcat Mastery:** Learned how to interact with remote services directly via TCP/IP.
