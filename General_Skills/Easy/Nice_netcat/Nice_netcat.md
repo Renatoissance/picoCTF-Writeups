@@ -1,7 +1,7 @@
-# 🔮 Challenge: Nice netcat...
+# Challenge: Nice netcat...
 **Category:** General Skills | **Difficulty:** Easy | **Author:** syreal
 
-## 📝 Challenge Description
+## Challenge Description
 *"There is a nice program that you can talk to by using this command in a shell: nc [host] [port]"*
 
 This challenge introduces a common scenario where a server communicates using raw decimal ASCII codes instead of plaintext. The goal is to capture the stream and decode it into a human-readable format.
@@ -10,7 +10,7 @@ This challenge introduces a common scenario where a server communicates using ra
 
 ---
 
-## 🔍 Analysis
+## Analysis
 Connecting to the provided instance via Netcat resulted in a vertical list of numbers rather than a standard flag string. 
 
 <div align="center">
@@ -29,7 +29,7 @@ This pattern (`pico...`) clearly identifies the output as decimal-encoded ASCII 
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Data Extraction
 I connected to the challenge instance using the provided Netcat command and copied the entire sequence of numbers. 
@@ -57,7 +57,7 @@ To efficiently convert the large block of numbers, I used **CyberChef**:
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **ASCII Familiarity:** Recognizing that numbers in the range of 32-126 often represent printable ASCII characters.
 * **Stream Processing:** Learning how to handle multi-line output from a network socket and prepare it for decoding tools.
 * **Tool Versatility:** Using CyberChef's "From Decimal" recipe as a faster alternative to manual lookup or custom scripting.
