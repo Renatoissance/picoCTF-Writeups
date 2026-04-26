@@ -1,14 +1,14 @@
-# 🔮 Challenge: First Grep
+# Challenge: First Grep
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Alex Fulton/Danny Tunitis
 
-## 📝 Challenge Description
+## Challenge Description
 *"Can you find the flag in the file? This would be really tedious to look through manually, something tells me there is a better way."*
 
 This challenge is designed to demonstrate the inefficiency of manual inspection versus the power of automated pattern searching in large datasets.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 Upon opening the provided file, it becomes immediately clear why manual searching is not recommended. The file contains a massive, disorganized block of text, making it nearly impossible for a human to spot the flag among the noise.
 
 <div align="center">
@@ -25,7 +25,7 @@ While a standard text editor's search function (`Ctrl+F`) can find the flag, the
 
 ---
 
-## 🛠️ Solution: The Power of Grep
+## Solution: The Power of Grep
 
 To solve this the "intended" way, I used the **`grep`** utility in my Ubuntu environment. `grep` is a command-line tool for searching plain-text data sets for lines that match a regular expression.
 
@@ -55,7 +55,7 @@ grep -o "picoCTF{.*}" file
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Automation over Manual Labor:** Never search through large files manually if a tool like `grep` is available.
 * **Grep Flags:** Understanding the `-o` flag is essential for exfiltrating specific data strings like flags or passwords from messy log files.
 * **Regex Basics:** Using `.*` as a simple wildcard is the first step toward mastering regular expressions.
