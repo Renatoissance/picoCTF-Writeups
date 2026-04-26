@@ -1,14 +1,14 @@
-# 🔮 Challenge: ping-cmd
+# Challenge: ping-cmd
 **Category:** General | **Difficulty:** Easy | **Author:** Yahaya Meddy | **Environment:** Ubuntu 22.04 (VirtualBox)
 
-## 📝 Challenge Description
+## Challenge Description
 The server offers a service to ping an IP address (specifically Google's `8.8.8.8`). The goal is to bypass the intended functionality and trick the server into revealing hidden files.
 
 > **Note:** This challenge uses **dynamic instances**. You must launch your own challenge instance on the picoCTF platform to get the specific host URL and port for your `nc` (Netcat) connection.
 
 ---
 
-## 🔍 Step-by-Step Analysis
+## Step-by-Step Analysis
 
 ### 1. Initial Testing (Sanity Check)
 In the first step, I performed a standard ping to verify the service's behavior and ensure the connection via Netcat was stable.
@@ -54,7 +54,7 @@ Now that the filename was known, I replaced the `ls` command with `cat` to read 
 
 ---
 
-## 💡 Technical Deep Dive: Why did this work?
+## Technical Deep Dive: Why did this work?
 This attack is called **Command Injection**. It happens when an application passes unsafe user-supplied data (in this case, the IP string) directly to a system shell without proper sanitization. 
 
 1.  **Vulnerable Code Logic:** The backend server likely executes a system call similar to: 
