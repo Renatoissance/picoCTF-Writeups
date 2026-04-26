@@ -1,12 +1,12 @@
 # Challenge: MultiCode
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Yahaya Meddy
 
-## 📝 Challenge Description
+## Challenge Description
 "We intercepted a suspiciously encoded message, but it’s clearly hiding a flag. No encryption, just multiple layers of obfuscation. Can you peel back the layers and reveal the truth?"
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 The challenge provides a file named `message.txt` with the following encoded string:
 `NjM3NjcwNjI1MDQ3NTMyNTM3NDI2MTcyNjY2NzcyNzE1ZjcyNjE3MDMwNzE3NjYxNzQ1ZjM4MzIzNDM5Mzk3MTZlNzEyNTM3NDQ=`
@@ -23,7 +23,7 @@ The challenge provides a file named `message.txt` with the following encoded str
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### 1. Using CyberChef
 To decode the message, I used CyberChef. The string ends with an `=`, which is a strong indicator for **Base64** padding.
@@ -52,7 +52,7 @@ By experimenting with the "Recipe" in CyberChef, I found the correct order to re
 
 ---
 
-## 💡 What I learned
+## What I learned
 * **Layered Obfuscation:** Recognizing the difference between encryption and encoding is key.
 * **Pattern Identification:** `=` usually means Base64; long digit/letter pairs often suggest Hex.
 * **Tool Proficiency:** CyberChef is essential for rapid prototyping of decoding recipes.
