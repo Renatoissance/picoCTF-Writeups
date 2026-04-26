@@ -1,14 +1,14 @@
-# 🔮 Challenge: Bases
+# Challenge: Bases
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Sanjay C/Danny T
 
-## 📝 Challenge Description
+## Challenge Description
 *"What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with bases."*
 
 This challenge focuses on identifying and decoding common data encoding schemes used in web and network communications—specifically Base64.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 The string `bDNhcm5fdGgzX3IwcDM1` has the distinct characteristics of **Base64** encoding:
 * It uses a mix of uppercase (`A-Z`) and lowercase (`a-z`) letters.
 * It includes numbers (`0-9`).
@@ -18,7 +18,7 @@ Base64 is not encryption, but an encoding scheme used to represent binary data i
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### Step 1: Decoding with CyberChef
 To decode the string, I used **CyberChef**, a powerful web-based tool for data manipulation. 
@@ -47,6 +47,6 @@ I then wrapped the decoded string into the required picoCTF flag format.
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Encoding Identification:** Recognizing Base64 by its character set is a fundamental skill in CTFs.
 * **CyberChef Mastery:** Leveraging tools like CyberChef saves time and reduces errors compared to manual decoding or writing custom scripts for simple tasks.
