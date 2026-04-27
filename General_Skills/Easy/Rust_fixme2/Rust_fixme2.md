@@ -1,14 +1,14 @@
-# 🦀 Challenge: Rust fixme 2
+# Challenge: Rust fixme 2
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Taylor McCampbell
 
-## 📝 Challenge Description
+## Challenge Description
 *"The Rust saga continues? I ask you, can I borrow that, pleeeeeaaaasseeeee?"*
 
 This challenge is a direct lesson in Rust's ownership and borrowing system. Unlike the first challenge, fixing simple syntax isn't enough; you have to understand how to move and borrow data safely.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 ### The Compiler as a Mentor
 As with the first challenge, I started by running `cargo run` to see how the compiler reacts. Rust’s error messages (E0596) are incredibly descriptive—it practically told me to use `&mut` before I even analyzed the logic.
@@ -34,7 +34,7 @@ In Rust, variables are **immutable by default**. To fix the code in `rust_fixme2
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### 1. Implementing Mutability
 I applied the `mut` keyword in three strategic locations:
@@ -65,7 +65,7 @@ Running the corrected program successfully modified the string and decrypted the
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Ownership & Borrowing:** Understanding the difference between `&` (shared) and `&mut` (exclusive) references.
 * **Explicit Mutability:** Realizing that in Rust, "change" is a permission that must be explicitly granted.
 * **Memory Safety:** Seeing how the compiler prevents potential bugs (like modifying a string while another part of the program might be reading it) before the program even runs.
