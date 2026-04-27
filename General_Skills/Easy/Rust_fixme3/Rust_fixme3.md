@@ -1,14 +1,14 @@
-# 🦀 Challenge: Rust fixme 3
+# Challenge: Rust fixme 3
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Taylor McCampbell
 
-## 📝 Challenge Description
+## Challenge Description
 *"Have you heard of Rust? Fix the syntax errors in this Rust file to print the flag!"*
 
 This problem requires understanding that while Rust is a memory-safe language, it provides a "backdoor" called `unsafe` to bypass certain rules for low-level system operations.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 ### A Cryptic Error Message
 As usual, I started with `cargo run`. While Rust's compiler is normally a helpful mentor, this time it was more of a strict guard. It flagged error E0133, telling me that calling an unsafe function like `std::slice::from_raw_parts` requires an unsafe function or block.
@@ -35,7 +35,7 @@ The author strategically commented out the unsafe blocks in Figure 2 to force th
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### 1. Activating the Unsafe Block
 I simply removed the comment markers (`//`) around the `unsafe { ... }` block that was already present in `src/main.rs`. This explicitly told Rust that the programmer accepts responsibility for the pointer dereferencing within that scope.
@@ -63,7 +63,7 @@ Running `cargo run` again successfully compiled the program and revealed the fla
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Unsafe Rust:** Learned that Rust provides a defined mechanism to temporarily bypass its safety guarantees.
 * **Low-Level Access:** Understanding how raw pointers, lengths, and memory dereferencing work "under the hood" in a system-safe language.
 * **Perspective:** While Rust prevents many bugs, knowing about `unsafe` is vital for understanding why C/C++ require so much manual effort for memory safety.
