@@ -1,13 +1,13 @@
-# 🦀 Challenge: Rust fixme 1
+# Challenge: Rust fixme 1
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Taylor McCampbell
 
-## 📝 Challenge Description
+## Challenge Description
 "Have you heard of Rust? Fix the syntax errors in this Rust file to print the flag!"
 This challenge is a classic introduction to Rust's strict syntax and the `cargo` build system. Unlike other challenges, this one requires a local environment to compile and run code that uses external dependencies.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 ### Initial Environment Setup
 The challenge provided a small Rust project with some intentional syntax errors. The goal: fix the code to decrypt and print the flag.
@@ -40,7 +40,7 @@ The errors confirmed what the author hinted at in the code comments:
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 ### 1. Code Refactoring
 I opened the `main.rs` file and applied the fixes as suggested by the compiler and the inline comments.
@@ -80,7 +80,7 @@ After fixing the syntax, the program output the following flag:
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Rust's Strictness:** Learned that Rust's compiler is a powerful ally that enforces memory safety and correct syntax before the code even runs.
 * **Cargo Power:** Experienced how easily Rust manages external crates (like `xor_cryptor`) via the `Cargo.toml` manifest.
 * **Modern Tooling:** Transitioning from IntelliJ to a Linux-based CLI workflow for low-level language debugging.
