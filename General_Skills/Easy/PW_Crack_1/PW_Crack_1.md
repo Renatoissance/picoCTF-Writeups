@@ -11,7 +11,7 @@ We are provided with a Python script (`level1.py`) and an encrypted text file (`
 
 Instead of trying to brute-force the password or blindly guess, the most efficient approach is to inspect the source code of the provided Python script.
 
-Looking at the `level_1_pw_check()` function within the script, the authentication logic is clearly visible in plain text[cite: 1]:
+Looking at the `level_1_pw_check()` function within the script, the authentication logic is clearly visible in plain text:
 ```python
 def level_1_pw_check():
     user_pw = input("Please enter correct password for flag: ")
@@ -23,12 +23,14 @@ def level_1_pw_check():
     print("That password is incorrect")
 ```
 
-The script simply compares the user's input against the hardcoded string `"1e1a"`[cite: 1]. 
+The script simply compares the user's input against the hardcoded string `"1e1a"`. 
 
 ### Execution Step
-I opened my Linux terminal, navigated to the directory containing both files, and executed the script. When prompted for the password, I inputted `1e1a`[cite: 1]. The script verified the password, used it to decipher the encrypted file, and successfully printed the flag.
+I opened my Linux terminal, navigated to the directory containing both files, and executed the script. When prompted for the password, I inputted `1e1a`. The script verified the password, used it to decipher the encrypted file, and successfully printed the flag.
 
-![PW Crack 1 Execution](img/PW_Crack_1.png)
+<div align="center">
+  <img src="img/PW_Crack_1.png" alt="PW Crack 1 Execution">
+</div>
 
 *Figure 1: Executing the script and providing the hardcoded password to reveal the flag.*
 
