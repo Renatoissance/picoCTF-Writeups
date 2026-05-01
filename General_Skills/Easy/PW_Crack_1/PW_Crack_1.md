@@ -30,9 +30,9 @@ I opened my Linux terminal, navigated to the directory containing both files, an
 
 <div align="center">
   <img src="img/PW_Crack_1.png" alt="PW Crack 1 Execution">
+  <br>
+  <em>Figure 1: Executing the script and providing the hardcoded password to reveal the flag.</em>
 </div>
-
-*Figure 1: Executing the script and providing the hardcoded password to reveal the flag.*
 
 ## Final Flag
 <details>
