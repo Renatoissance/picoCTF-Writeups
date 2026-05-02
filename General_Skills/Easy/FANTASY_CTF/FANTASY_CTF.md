@@ -1,12 +1,12 @@
 # Challenge: FANTASY CTF
 **Category:** General Skills | **Difficulty:** Easy | **Author:** syreal
 
-## 📝 Challenge Description
+## Challenge Description
 Play this short game to get familiar with terminal applications and some of the most important rules in scope for picoCTF. Additional details will be available after launching your challenge instance.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 The challenge description asks us to connect to a remote server using a terminal application. This is a common requirement in CTFs to interact with services, access remote shells, or, as in this case, play a text-based game.
 
@@ -26,7 +26,7 @@ ncat verbal-sleep.picoctf.net 63337
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 Upon connecting, the game presented a story and eventually a list of options regarding account registration.
 
@@ -83,7 +83,7 @@ After making the correct, ethical choices, the simulation concluded, and the fla
 
 ---
 
-## 💡 What I learned
+## What I learned
 * **CLI Networking:** Using `ncat` (from the `nmap` suite) to connect to remote TCP services.
 * **CTF Ethics:** Reinforced core Rules of Engagement: single accounts only, no flag sharing, and solving challenges independently.
 * **Orientation:** An introduction to the interactive format common in many general-skills CTF challenges.
