@@ -1,12 +1,12 @@
 # Challenge: Log Hunt
 **Category:** General Skills | **Difficulty:** Easy | **Author:** Yahaya Meddy
 
-## 📝 Challenge Description
+## Challenge Description
 Our server seems to be leaking pieces of a secret flag in its logs. The parts are scattered and sometimes repeated. Can you reconstruct the original flag? Download the logs and figure out the full flag from the fragments.
 
 ---
 
-## 🔍 Analysis
+## Analysis
 After downloading and opening the `server.log` file, I noticed that the log entries were cluttered with standard INFO, WARN, and ERROR messages. However, many entries contained a specific keyword: `FLAGPART`.
 
 In the initial inspection, it became clear that the flag was broken into several fragments scattered across different timestamps.
@@ -16,7 +16,7 @@ In the initial inspection, it became clear that the flag was broken into several
   <p><i>Figure 1: Initial inspection of 'server.log' showing standard log noise interspersed with 'FLAGPART' fragments.</i></p>
 </div>
 
-## 🛠️ Solution
+## Solution
 To avoid searching through thousands of lines manually, I used the Windows Command Line tool `FINDSTR` to filter the log for all occurrences of the keyword "FLAGPART".
 
 **Command used:**
@@ -48,7 +48,7 @@ The output (as seen below) revealed the fragments in a repetitive pattern. By id
 
 ---
 
-## 💡 What I learned
+## What I learned
 * **Pattern Recognition:** Identifying specific keywords (`FLAGPART`) within high-volume log data.
 * **CLI Efficiency:** Using `FINDSTR` (the Windows equivalent to Linux `grep`) to filter relevant information from noise.
 * **Data Recovery:** Reassembling a secret string from scattered log fragments.
