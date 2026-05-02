@@ -32,7 +32,7 @@ All documented challenges are located within the General Skills category.
 | General Skills | Bases | Easy | [Read Writeup](./General_Skills/Easy/Bases/Bases.md) |
 | General Skills | bytemancy_0 | Easy | [Read Writeup](./General_Skills/Easy/bytemancy_0/bytemancy_0.md) |
 | General Skills | bytemancy_1 | Easy | [Read Writeup](./General_Skills/Easy/bytemancy_1/bytemancy_1.md) |
-| General Skills | FANTASY_CFT | Easy | [Read Writeup](./General_Skills/Easy/FANTASY_CFT/FANTASY_CFT.md) |
+| General Skills | FANTASY_CFT | Easy | [Read Writeup](./General_Skills/Easy/FANTASY_CTF/FANTASY_CTF.md) |
 | General Skills | First_Grep | Easy | [Read Writeup](./General_Skills/Easy/First_Grep/First_Grep.md) |
 | General Skills | fixme1.py | Easy | [Read Writeup](./General_Skills/Easy/fixme1.py/fixme1.py.md) |
 | General Skills | fixme2.py | Easy | [Read Writeup](./General_Skills/Easy/fixme2.py/fixme2.py.md) |
